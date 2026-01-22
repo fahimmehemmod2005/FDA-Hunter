@@ -7,7 +7,7 @@ import 'route_name.dart';
 class AppRoutes {
 
   // initialRoute
-  static const String initialRoute = RouteName.splashScreen;
+  static const String initialRoute = RouteName.loginScreen;
 
   static final Map<String, WidgetBuilder> routes = {
 
