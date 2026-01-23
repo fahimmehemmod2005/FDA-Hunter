@@ -1,5 +1,10 @@
+import 'package:fdahunter/app/routes/route_name.dart';
+import 'package:fdahunter/core/constant/app_color.dart';
+import 'package:fdahunter/core/constant/app_images.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,17 +15,40 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-    void initState() {
+  void initState() {
     super.initState();
     Timer(const Duration(seconds: 3), () {
-      //Navigator.pushReplacementNamed(context, RouteName.RouteName);
+      Navigator.pushReplacementNamed(context, RouteName.onboardingScreen);
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('splash')
+      body: Stack(
+        children: [SizedBox(
+          height: double.infinity.h,
+          width: double.infinity.w,
+          child: Image.asset(
+            AppImages.backgound,
+            fit: BoxFit.cover
+            ),
+        ),
+        Align(
+          alignment: AlignmentGeometry.center,
+          child: SizedBox(
+            height: 213.h,
+            width: 204.w,
+            child: Image.asset(AppImages.logo,fit: BoxFit.contain,)),
+        ),
+        Positioned(
+          left: 187,
+          bottom: 150,
+          child: CircularProgressIndicator(
+            color: AppColor.main,
+          )
+          )
+        ]
       ),
     );
   }

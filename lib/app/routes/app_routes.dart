@@ -1,6 +1,7 @@
 import 'package:fdahunter/features/auth/presentation/view/screens/category_screen.dart';
 import 'package:fdahunter/features/auth/presentation/view/screens/create_account_screen.dart';
 import 'package:fdahunter/features/auth/presentation/view/screens/login_screen.dart';
+import 'package:fdahunter/features/onboarding/view/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import '../../features/splash/splash_screen.dart';
 import 'route_name.dart';
@@ -8,7 +9,7 @@ import 'route_name.dart';
 class AppRoutes {
 
   // initialRoute
-  static const String initialRoute = RouteName.loginScreen;
+  static const String initialRoute = RouteName.splashScreen;
 
   static final Map<String, WidgetBuilder> routes = {
 
@@ -19,6 +20,7 @@ class AppRoutes {
     RouteName.loginScreen: (context) => const LoginScreen(),
     RouteName.createAccountScreen: (context) => const CreateAccountScreen(),
     RouteName.categoryScreen: (context) => const CategoryScreen(),
+    RouteName.onboardingScreen: (context) => const OnboardingScreen(),
 
   };
 }

@@ -5,7 +5,13 @@ import '../../core/constant/app_text_styles.dart';
 class MainButton extends StatelessWidget {
   final String? label;
   final VoidCallback? onTap;
-  const MainButton({super.key, this.label, this.onTap});
+  final double? borderRadius;
+  const MainButton({
+    super.key, 
+    this.label, 
+    this.onTap, 
+    this.borderRadius,
+    });
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +19,8 @@ class MainButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColor.main,
         minimumSize: Size(double.infinity, 50),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius??12)),
       ),
       onPressed: onTap,
       child: Text(
