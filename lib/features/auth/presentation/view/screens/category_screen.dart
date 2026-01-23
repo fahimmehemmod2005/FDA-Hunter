@@ -97,6 +97,7 @@ class CategoryScreen extends StatelessWidget {
                       print(provider.selectedCategories);
                     },
                   ),
+                  AppSizeBox.height10
                 ],
               );
             },
