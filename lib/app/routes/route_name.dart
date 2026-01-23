@@ -9,5 +9,6 @@ class RouteName {
   static const String otpScreen = '/otpScreen';
   static const String resetPasswordScreen = '/resetPasswordScreen';
   static const String mainScreen = '/mainScreen';
+  static const String homeScreen = '/homeScreen';
 
 }

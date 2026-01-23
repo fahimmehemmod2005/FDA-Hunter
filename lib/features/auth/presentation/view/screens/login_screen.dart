@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       // --------------- title and subtitle --------------
                       TitleSubtitleBar(
-                        title: "Welcome Back 👋🏻",
+                        title: "Welcome Back 👋",
                         subtitle: "Please fill up and login to your account",
                       ),
                       AppSizeBox.height50,

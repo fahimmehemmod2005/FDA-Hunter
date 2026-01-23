@@ -1,5 +1,6 @@
 import 'package:fdahunter/app/widgets/my_scaffold.dart';
 import 'package:fdahunter/core/constant/app_color.dart';
+import 'package:fdahunter/features/home/view/screen/home_screen.dart';
 import 'package:fdahunter/features/main_screen/viewmodel/main_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +15,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
 
   final screens = [
-    const Center(child: Text("Home", style: TextStyle(color: Colors.white)),),
+    const HomeScreen(),
     const Center(child: Text("Sports", style: TextStyle(color: Colors.white)),),
     const Center(child: Text("Stocks", style: TextStyle(color: Colors.white)),),
     const Center(child: Text("Crypto", style: TextStyle(color: Colors.white)),),

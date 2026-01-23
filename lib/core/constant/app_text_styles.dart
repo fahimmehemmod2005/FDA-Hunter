@@ -12,6 +12,7 @@ class AppTextStyles {
   static TextStyle size16w400({Color? color}) => GoogleFonts.dmSans(fontSize: 16, fontWeight: FontWeight.w400, color: color,);
   static TextStyle size18w700({Color? color}) => GoogleFonts.dmSans(fontSize: 18, fontWeight: FontWeight.w700, color: color,);
   static TextStyle size28w600({Color? color}) => GoogleFonts.dmSans(fontSize: 28, fontWeight: FontWeight.w600, color: color,);
+  static TextStyle size20w600({Color? color}) => GoogleFonts.dmSans(fontSize: 20, fontWeight: FontWeight.w600, color: color,);
 
 }
 
