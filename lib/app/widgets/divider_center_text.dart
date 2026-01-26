@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart' show StatelessWidget, Divider, Colors;
 import 'package:flutter/widgets.dart';
 
-import '../../../../../core/constant/app_color.dart';
-import '../../../../../core/constant/app_text_styles.dart';
+import '../../core/constant/app_color.dart';
+import '../../core/constant/app_text_styles.dart';
 
 class DividerCenterText extends StatelessWidget {
   final String? title;

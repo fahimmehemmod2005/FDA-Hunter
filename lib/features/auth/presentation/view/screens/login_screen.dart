@@ -14,7 +14,7 @@ import 'package:provider/provider.dart';
 import '../../../../../app/widgets/checkbox_forgot_row.dart';
 import '../../../../../app/widgets/main_button.dart';
 import '../../../../../app/widgets/title_subtitle_bar.dart';
-import '../widgets/divider_center_text.dart';
+import '../../../../../app/widgets/divider_center_text.dart';
 import '../widgets/social_button.dart';
 
 class LoginScreen extends StatefulWidget {
