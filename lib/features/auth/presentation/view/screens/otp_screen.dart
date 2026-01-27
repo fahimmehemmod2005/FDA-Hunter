@@ -84,7 +84,7 @@ class _OtpScreenState extends State<OtpScreen> {
                       keyboardType: TextInputType.number,
                       validator: provider.otpValidator,
                       controller: _pinController,
-                      length: 4,
+                      length: 6,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       defaultPinTheme: defaultPinTheme,
                       focusedPinTheme: focusedPinTheme,

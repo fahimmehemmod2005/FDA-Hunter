@@ -5,10 +5,8 @@ import 'package:fdahunter/app/widgets/my_scaffold.dart';
 import 'package:fdahunter/core/constant/app_color.dart';
 import 'package:fdahunter/core/constant/app_images.dart';
 import 'package:fdahunter/core/constant/app_size_box.dart';
-import 'package:fdahunter/core/constant/app_text_styles.dart';
 import 'package:fdahunter/features/auth/presentation/view/screens/forgot_screen.dart';
 import 'package:fdahunter/features/auth/presentation/viewmodel/login_view_model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../../app/widgets/checkbox_forgot_row.dart';
@@ -178,7 +176,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // --------------- rich text ---------------
                     Center(
                       child: CustomRichText(
-                        text1: "Don’t have an account? ",
+                        text1: "Don't have an account? ",
                         text2: " Create",
                         text2Tap: () {
                           Navigator.pushNamed(
