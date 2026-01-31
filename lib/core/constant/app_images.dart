@@ -21,4 +21,5 @@ class AppImages {
   static const String success = 'assets/images/success.png';
   static const String profile = 'assets/images/profile.png';
   static const String fahim = 'assets/images/Fahim.png';
+  static const String backgroundColor = 'assets/images/background.jpg';
 }

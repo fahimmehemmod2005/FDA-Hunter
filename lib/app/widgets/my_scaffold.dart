@@ -1,3 +1,4 @@
+import 'package:fdahunter/core/constant/app_images.dart';
 import 'package:flutter/material.dart';
 
 class MyScaffold extends StatelessWidget {
@@ -48,14 +49,9 @@ class MyScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF285A32),
-            Color(0xFF071A0E),
-            Color(0xFF020703),
-          ],
+        image: DecorationImage(
+          image: AssetImage(AppImages.backgroundColor),
+          fit: BoxFit.cover,
         ),
       ),
       child: Scaffold(
