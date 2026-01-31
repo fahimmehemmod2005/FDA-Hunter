@@ -1,6 +1,7 @@
 import 'package:fdahunter/app/routes/route_name.dart';
 import 'package:fdahunter/core/constant/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
+     body: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: const SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.dark,
+        ),
+        child: SizedBox(
         height: double.infinity.h,
         width: double.infinity.w,
         child: Image.asset(
@@ -31,6 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
             fit: BoxFit.cover
         ),
       ),
+    ),
     );
   }
 }

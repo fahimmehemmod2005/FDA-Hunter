@@ -5,6 +5,7 @@ import 'package:fdahunter/core/constant/app_size_box.dart';
 import 'package:fdahunter/core/constant/app_text_styles.dart';
 import 'package:fdahunter/features/onboarding/viewmodel/onboarding_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
@@ -43,7 +44,12 @@ class OnboardingScreen extends StatelessWidget {
     return Consumer<OnboardingViewModel>(
       builder: (context, provider, child) {
         return Scaffold(
-          body: Stack(
+          body:  AnnotatedRegion<SystemUiOverlayStyle>(
+            value: const SystemUiOverlayStyle(
+              statusBarIconBrightness: Brightness.light,
+              statusBarBrightness: Brightness.dark,
+            ),
+            child: Stack(
             children: [
               // PageView
               PageView.builder(
@@ -119,6 +125,7 @@ class OnboardingScreen extends StatelessWidget {
               ),
             ],
           ),
+        )
         );
       },
     );

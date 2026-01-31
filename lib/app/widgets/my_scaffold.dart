@@ -1,5 +1,6 @@
 import 'package:fdahunter/core/constant/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;
@@ -56,8 +57,14 @@ class MyScaffold extends StatelessWidget {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
+        body: AnnotatedRegion<SystemUiOverlayStyle>(
+          value: const SystemUiOverlayStyle(
+            statusBarIconBrightness: Brightness.light,
+            statusBarBrightness: Brightness.dark,
+          ),
+          child: body ?? const SizedBox(),
+        ),
         appBar: appBar,
-        body: body,
         bottomNavigationBar: bottomNavigationBar,
         floatingActionButton: floatingActionButton,
         floatingActionButtonLocation: floatingActionButtonLocation,
