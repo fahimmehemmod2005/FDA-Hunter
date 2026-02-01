@@ -40,6 +40,7 @@ class _MainScreenState extends State<MainScreen> {
     return Consumer<MainViewModel>(
       builder: (context, provider, child) {
         return MyScaffold(
+          extendBody: true,
           body: screens[provider.currentIndex],
 
           bottomNavigationBar: SafeArea(
